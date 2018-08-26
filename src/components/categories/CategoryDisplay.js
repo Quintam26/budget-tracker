@@ -19,7 +19,6 @@ class CategoryDisplay extends Component {
         {category.name} has a budget of ${category.budget}
         <button name="Edit" onClick={onEdit}>✎</button> 
         <button name="Delete" onClick={() => remove(category.key)}>🗑</button>
-        <button name="Expense" onClick={onEdit}>✎</button> 
       </p>
     );
   }

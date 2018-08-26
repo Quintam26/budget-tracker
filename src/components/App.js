@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import Header from './Header';
 import Home from './Home';
 import styles from './App.css';
-import ExpenseDashboard from './categories/expenses/ExpenseDashboard';
 import Dashboard from './categories/Dashboard';
 
 class App extends Component {
@@ -22,7 +21,6 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/categories" component={Dashboard}/>
-              <Route exact path="/expenses" component={ExpenseDashboard}/>
               <Redirect to="/"/>
             </Switch>
           </main>
